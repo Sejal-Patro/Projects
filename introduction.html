@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        background-image: url("bg.jpeg");
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      h1 {
+        background-color: pink;
+        text-align: center;
+        padding: 10px;
+      }
+      p,
+      pr {
+        margin: 20px;
+        text-align: justify;
+      }
+      hr {
+        border: 1px solid #ccc;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Introduction</h1>
+    <p>
+      <b
+        >My name is Sejal. I am from ABCD. Images are not technically inserted
+        into a web page; images are linked to web pages. The
+        <code>&lt;img&gt;</code> tag creates a holding space for the referenced
+        image.</b
+      >
+    </p>
+    <hr />
+    <p>
+      <b>
+        You must include your basic information, educational background,
+        relevant skills, and related details about your personality. Remember to
+        keep it brief and avoid digressions, as it can backfire on your
+        self-introduction. Having a script will help you make an excellent first
+        impression.
+      </b>
+    </p>
+    <p>
+      Hard work is the key to success. Life cannot grow properly without effort.
+      Some believe they can rely solely on luck, but that is rarely true.
+      Dedication and perseverance are crucial for happiness and success.
+    </p>
+    <p>
+      My day-to-day life involves learning new things, enjoying small moments,
+      and cherishing meaningful experiences. Recently, I’ve decided to work
+      harder and set higher goals for myself. I am passionate about many things,
+      especially sports, singing, dancing, and reading fiction novels.
+    </p>
+    <p>
+      Last but not least, I believe in two principles: Failure is the pillar of
+      success, and confidence is key. Thank you!
+    </p>
+    <hr />
+    <ul>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="table.html">Table</a></li>
+      <li><a href="conclusion.html">Conclusion</a></li>
+    </ul>
+
+    <script>
+      window.onload = function () {
+        alert("Welcome to my portfolio!");
+      };
+
+      function validateForm() {
+        const name = document.getElementById("NAME").value;
+        if (name === "") {
+          alert("Please enter your name.");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

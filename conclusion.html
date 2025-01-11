@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      h1 {
+        border-bottom: 2px solid Tomato;
+        padding: 10px 0;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      img {
+        display: block;
+        margin: 10px auto;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      p {
+        text-align: justify;
+        margin: 10px 0;
+      }
+
+      button {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: Tomato;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #ff6347;
+      }
+
+      .link-image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+      }
+
+      .link-image img:hover {
+        transform: scale(1.1);
+      }
+
+      footer {
+        margin-top: 30px;
+        padding: 20px;
+        text-align: center;
+        background: #333;
+        color: #fff;
+        font-size: 14px;
+      }
+
+      @media (max-width: 600px) {
+        button {
+          width: 100%;
+          font-size: 14px;
+          padding: 12px;
+        }
+        .container {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Projects</h1>
+
+    <div class="container">
+      <section>
+        <h2>Credit Card Fraud Detection in ML</h2>
+        <img
+          src="https://ai-journey.com/wp-content/uploads/2019/06/fraud-EMV-chip-credit-card.jpg"
+          alt="Credit Card Fraud Detection"
+        />
+        <p>
+          Credit card fraud detection with machine learning involves training a
+          model on past transactions to spot suspicious patterns. It learns what
+          fraud looks like and flags unusual activities, helping prevent
+          fraudulent transactions in real time. Machine learning catches credit
+          card fraud by learning patterns from past data and spotting unusual
+          transactions in real time.
+        </p>
+      </section>
+
+      <section>
+        <h2>Women’s Analytics: Protecting Women’s Safety</h2>
+        <img
+          src="https://th.bing.com/th/id/OIP.1fWBD07oxkFBqfq1QHNCIwHaEI?rs=1&pid=ImgDetMain"
+          alt="Women's Safety Analytics"
+        />
+        <p>
+          Development of a real-time AI system that detects threats to women's
+          safety through CCTV and alerts local police immediately. Women's
+          safety focuses on ensuring protection from violence, harassment, and
+          harm.
+        </p>
+      </section>
+
+      <h1>Conclusion</h1>
+      <section>
+        <p>
+          The science of psychology is an exciting adventure. Whether you become
+          a scientific psychologist, an applied psychologist, or an educated
+          person who knows about psychological research, this field can
+          influence your life and provide fun, rewards, and understanding.
+        </p>
+        <p>
+          Here are some examples of effective closing phrases for
+          self-introductions: "Thank you for your time and consideration. I look
+          forward to the opportunity to discuss how my skills and experience can
+          contribute to your goals."
+        </p>
+        <p>
+          Seven billion people are on this Earth, and everybody is different
+          from the rest. There is nothing without purpose in this world.
+          Everything has some purpose. Humans are the best creation, and each
+          person is unique. Writing about myself, I’m here to express what I
+          see, what I experience, and what I plan for my life. I strive to be
+          modest, passionate, devoted, hardworking, and honest.
+        </p>
+      </section>
+
+      <div style="text-align: center">
+        <button onclick="navigateToLink('https://w3docs.com')">
+          Go to W3Docs
+        </button>
+        <button onclick="navigateToLink('https://google.com')">
+          Go to Google
+        </button>
+      </div>
+
+      <h2>Image as a Link</h2>
+      <p style="text-align: center">
+        The image below is a link. Try to click on it.
+      </p>
+      <div class="link-image" style="text-align: center">
+        <a href="https://google.com">
+          <img
+            src="C:/Users/sejal/OneDrive/Pictures/smiley.jpeg"
+            alt="Google Link"
+            onclick="showAlert()"
+          />
+        </a>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 Your Name. All rights reserved.</footer>
+
+    <script>
+      // Function to navigate to a link
+      function navigateToLink(url) {
+        window.location.href = url;
+      }
+
+      // Function to display an alert when the image is clicked
+      function showAlert() {
+        alert("You clicked on the image link!");
+      }
+    </script>
+  </body>
+</html>

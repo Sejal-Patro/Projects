@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+    <style>
+      body {
+        background-image: url("C:/Users/sejal/OneDrive/Pictures/demo1pw/bg.jpeg");
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        background-color: pink;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+      }
+      h2 {
+        background-color: DodgerBlue;
+        text-align: center;
+        color: white;
+        padding: 10px;
+      }
+      .hobby-section {
+        text-align: center;
+        margin: 20px 0;
+      }
+      img {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image</h1>
+    <div class="hobby-section">
+      <img
+        src="C:/Users/sejal/OneDrive/Pictures/demo1pw/sejal.jpg"
+        width="250"
+        height="300"
+        alt="Sejal's pic"
+      />
+    </div>
+
+    <h1>Hobbies</h1>
+    <div class="hobby-section">
+      <h2>Reading</h2>
+      <img
+        src="C:/Users/sejal/OneDrive/Pictures/demo1pw/read.jpeg"
+        width="250"
+        height="300"
+        alt="Reading"
+      />
+    </div>
+    <div class="hobby-section">
+      <h2>Dancing</h2>
+      <img
+        src="C:/Users/sejal/OneDrive/Pictures/demo1pw/dance.jpeg"
+        width="250"
+        height="300"
+        alt="Dancing"
+      />
+    </div>
+    <div class="hobby-section">
+      <h2>Singing</h2>
+      <img
+        src="C:/Users/sejal/OneDrive/Pictures/demo1pw/singing.jpeg"
+        width="250"
+        height="270"
+        alt="Singing"
+      />
+    </div>
+    <div class="hobby-section">
+      <h2>Cooking</h2>
+      <img
+        src="C:/Users/sejal/OneDrive/Pictures/demo1pw/cooking.jpg"
+        width="250"
+        height="270"
+        alt="Cooking"
+      />
+    </div>
+    <div class="hobby-section">
+      <h2>Acting</h2>
+      <img
+        src="C:/Users/sejal/OneDrive/Pictures/demo1pw/acting.jpeg"
+        width="250"
+        height="270"
+        alt="Acting"
+      />
+    </div>
+    <script>
+      // Log a message when an image is clicked
+      document.querySelectorAll("img").forEach((img) => {
+        img.addEventListener("click", (event) => {
+          alert(`You clicked on the image: ${event.target.alt}`);
+        });
+      });
+
+      document.querySelectorAll("h2").forEach((header) => {
+        header.addEventListener("click", () => {
+          document.body.style.backgroundColor = "lightyellow";
+          alert(`You clicked on the hobby: ${header.textContent}`);
+        });
+      });
+      window.addEventListener("load", () => {
+        alert("Welcome to the Hobbies page!");
+      });
+    </script>
+  </body>
+</html>

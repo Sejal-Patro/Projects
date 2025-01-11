@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        background-image: url("bg.jpeg");
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background-color: pink;
+        color: #000;
+        text-align: center;
+        padding: 15px 0;
+        margin: 20px 0;
+      }
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #f9f9f9;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+        text-align: center;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      th {
+        background-color: #f4b5c1;
+      }
+      input[type="text"] {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="radio"] {
+        margin-left: 20px;
+      }
+      label {
+        margin-left: 5px;
+      }
+      .skills {
+        width: 60%;
+        margin: 20px auto;
+        font-size: 1.1em;
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Academic Records</h1>
+    <table>
+      <tr>
+        <th>College</th>
+        <th>Std</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Nakoda School</td>
+        <td>10th</td>
+        <td>82%</td>
+      </tr>
+      <tr>
+        <td>Ycp College</td>
+        <td>Diploma</td>
+        <td>81%</td>
+      </tr>
+      <tr>
+        <td>Jain University</td>
+        <td>B.TECH 1st</td>
+        <td>71%</td>
+      </tr>
+      <tr>
+        <td>Jain University</td>
+        <td>B.TECH 2nd</td>
+        <td>81%</td>
+      </tr>
+      <tr>
+        <td>Jain University</td>
+        <td>B.TECH 3rd</td>
+        <td>81%</td>
+      </tr>
+    </table>
+
+    <h1>Enquiry Form</h1>
+    <p><b>Enter Your Name</b></p>
+    <input type="text" name="name" id="NAME" placeholder="First Name" />
+    <input type="text" name="middle_name" placeholder="Middle Name" />
+    <input type="text" name="last_name" placeholder="Last Name" />
+
+    <p><b>Select Gender</b></p>
+    <input type="radio" id="female" name="gender" value="Female" />
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="Male" />
+    <label for="male">Male</label>
+    <input type="radio" id="other" name="gender" value="Other" />
+    <label for="other">Other</label>
+
+    <h1>Skills</h1>
+    <div class="skills">
+      1. Communication Skills <br />
+      2. Interpersonal Skills <br />
+      3. Technical Skills <br />
+    </div>
+    <script>
+      window.addEventListener("load", () => {
+        console.log("Academic Records Page Loaded Successfully");
+        alert("Welcome to the Academic Records page!");
+      });
+
+      const nameField = document.getElementById("NAME");
+      nameField.addEventListener("input", () => {
+        console.log(`Name entered: ${nameField.value}`);
+      });
+
+      document.querySelectorAll("input[name='gender']").forEach((radio) => {
+        radio.addEventListener("change", (event) => {
+          console.log(`Selected Gender: ${event.target.value}`);
+        });
+      });
+      const tableRows = document.querySelectorAll("table tr");
+      tableRows.forEach((row, index) => {
+        if (index > 0) {
+          row.addEventListener("click", () => {
+            tableRows.forEach((r) => (r.style.backgroundColor = ""));
+            row.style.backgroundColor = "#f4b5c1";
+            console.log(
+              `Row Clicked: College - ${row.cells[0].textContent}, Std - ${row.cells[1].textContent}, Marks - ${row.cells[2].textContent}`
+            );
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
